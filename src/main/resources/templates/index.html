@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Luas Volume Bola</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="row d-flex justify-content-center">
+            <div class="card text-center">
+                <div class="card-header">
+                    <b>Hitung Luas Volume Bola</b>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Bola</h5>
+                    <!--                    <p class="card-text">Pataca Makau adalah nama mata uang Makau.</p>
+                                        <p class="card-text">Makau memiliki sebuah sistem dewan mata uang yang mana di bawah sistem ini, alat pembayaran yang sah Pataca Makau</p>-->
+                    <h6>Dengan phi = 3,14</h6>
+                    <form action="welcome">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Masukkan jari-jari dalam cm (sentimeter):</label>
+                            <div class="row justify-content-center">
+                                <input type="text" class="form-control col-5" id="formGroupExampleInput" placeholder="" name="sendData">
+                            </div>
+                        </div>   
+
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                        <!--                        <button type="submit">Send</button>-->
+                    </form>                                       
+                </div>
+
+                <div>
+                    <h1>Hasil hitung dengan jari-jari <span th:text="${jari}"></span> cm : </h1>
+                    <h2>Luas Permukaan <span th:text="${luas}"></span> cm2</h2>
+                    <h2>Volume <span th:text="${volume}"></span> cm2 </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-inverse navbar-fixed-bottom pt-5">
+                  <div class="container">
+                        <p class="navbar-text">@ Eka Nova Pramudya - 20190140104</p>
+                      </div>
+                </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
